@@ -43,7 +43,11 @@ else {
 }
 ```
 
-Once navigate correctly through the maze the following function will generate the flag from the history of moves:
+Now it is straightforward to navigate through the maze to reach the flag:
+
+![GitHub Logo](maze-solved.png)
+
+When reach the goal the following function will be executed that will generate the expected flag of `buckeye{am4z1ng_j0b_y0u_b1g_j4va_h4ck3r}` if the expected order of moves is provided:
 
 ```java
 private void printFlag() {
@@ -62,5 +66,3 @@ private void printFlag() {
     JOptionPane.showMessageDialog((Component)this, x, "Flag", 1);
 }
 ```
-
-This then produced the expected result `buckeye{am4z1ng_j0b_y0u_b1g_j4va_h4ck3r}`.
