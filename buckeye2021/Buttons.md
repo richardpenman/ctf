@@ -43,11 +43,11 @@ else {
 }
 ```
 
-Now it is straightforward to navigate through the maze to reach the flag:
+Now it is straightforward to navigate through the maze to reach the goal:
 
 ![GitHub Logo](maze-solved.png)
 
-When reach the goal the following function will be executed that will generate the expected flag of `buckeye{am4z1ng_j0b_y0u_b1g_j4va_h4ck3r}` if the expected order of moves is provided:
+When reach the goal the following function will be executed that will generate the value `buckeye{am4z1ng_j0b_y0u_b1g_j4va_h4ck3r}` if the expected order of moves is provided:
 
 ```java
 private void printFlag() {
