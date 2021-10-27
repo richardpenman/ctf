@@ -23,6 +23,26 @@ for (int i = 0; i < this.rows; ++i) {
 }
 ```
 
+And also remove the reset logic when making a wrong move:
+
+```java
+if (this.isLegalMove(posRow, posCol)) {
+    this.buttons[posRow][posCol].setEnabled(false);
+    this.posRow = posRow;
+    this.posCol = posCol;
+    this.moveHistory.add(int1);
+    System.out.println(this.moveHistory);
+    this.updateMovesLeft();
+    if (this.posRow == this.endRow && this.posCol == this.endCol) {
+        this.printFlag();
+    }
+}
+else {
+    //JOptionPane.showMessageDialog(this, "Illegal move, you lose \u2639", "Illegal move", 0);
+    //this.reset();
+}
+```
+
 Once navigate correctly through the maze the following function will generate the flag from the history of moves:
 
 ```java
