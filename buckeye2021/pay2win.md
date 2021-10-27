@@ -9,7 +9,7 @@ URL: https://pay2win.chall.pwnoh.io
 ## Solution
 This website has a number of protections against interacting with the website or using devtools. 
 
-Fortunately the source code is not obfuscated and we can see it uses a [JavaScript function](https://pay2win.chall.pwnoh.io/main.js) to dynamically generate a bunch of span elements with character of the flag:
+Fortunately the source code is not obfuscated and we can see it uses a [JavaScript function](https://pay2win.chall.pwnoh.io/main.js) to dynamically generate a bunch of span elements for each character of the flag:
 
 ```javascript
 function plantFlag () {
@@ -32,7 +32,7 @@ function plantFlag () {
 }
 ```
 
-And then uses CSS to order each span element:
+And then uses [CSS](https://pay2win.chall.pwnoh.io/main.css) to order each of these characters:
 ```css
 .flag-char-0 {
   order: 13;
